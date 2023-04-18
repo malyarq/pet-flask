@@ -1,0 +1,17 @@
+{"site_url":"http://localhost:8000",
+"site_title": "Константин Зиников: разработчик и автор контента",
+"description": "Константин Зиников - портфолио, резюме и блог разработчика",
+"keywords": "Веб-разработка на Python, бэкенд на Flask",
+"name": "Константин Зиников",
+"tag1":"Разработчик и дизайнер ",
+"tag2":"ваших проектов",
+"sect1":"Главная",
+"sect2":"Резюме",
+"sect3":"Портфолио",
+"sect4":"Блог",
+"sect5":"Контакты",
+"telegram":"https://t.me/dinsdq",
+"vk":"https://vk.com/dinsd_q",
+"email":"mailto:kzinikov@yandex.ru",
+"city":"Москва"
+}
