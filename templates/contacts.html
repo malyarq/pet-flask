@@ -12,15 +12,15 @@
 
         <div class="col-md-6 d-flex align-items-stretch">
           <div class="info-box">
-            <i class="bx bx-map"></i>
+            <a href="https://yandex.ru/maps/moscow"><i class="bx bx-map"></i></a>
             <h3>Город</h3>
-            <p>{{ city }}</p>
+            <p><a href="https://yandex.ru/maps/moscow">{{ city }}</a></p>
           </div>
         </div>
 
         <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
           <div class="info-box">
-            <i class="bx bx-share-alt"></i>
+            <a href="{{ vk }}"><i class="bx bx-share-alt"></i></a>
             <h3>Соцсети</h3>
             <div class="social-links">
               <a href="{{ vk }}" class="vkontakte"><i class="fa fa-vk"></i></a>
@@ -30,14 +30,14 @@
 
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
-            <i class="bx bx-envelope"></i>
+            <a href="{{ email }}"><i class="bx bx-envelope"></i></a>
             <h3>Email-адрес</h3>
             <p><a href="{{ email }}">{{ email.split(':')[1] }}</a></p>
           </div>
         </div>
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
-            <i class="bx bx-paper-plane"></i>
+            <a href="{{ telegram }}"><i class="bx bx-paper-plane"></i></a>
             <h3>Телеграм</h3>
             <p><a href="{{ telegram }}">{{ '@'+telegram.split('/')[3] }}</a></p>
           </div>

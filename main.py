@@ -7,7 +7,6 @@ DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'content'
-POST_DIR = 'posts'
 PORT_DIR = 'portfolio'
 
  
@@ -19,26 +18,12 @@ app.config.from_object(__name__)
 
 @app.route("/")
 def index():
-    posts = [p for p in flatpages if p.path.startswith(POST_DIR)]
-    posts.sort(key=lambda item: item['date'], reverse=True)
     cards = [p for p in flatpages if p.path.startswith(PORT_DIR)]
     cards.sort(key=lambda item: item['title'])    
     with open('settings.txt', encoding='utf8') as config:
         data = config.read()
         settings = json.loads(data)
-    tags = set()
-    for p in flatpages:
-        t = p.meta.get('tag')
-        if t:
-            tags.add(t.lower())
-    return render_template('index.html', posts=posts, cards=cards, tags=tags, bigheader=True, **settings)
- 
-
-@app.route('/posts/<name>/')
-def post(name):
-	path = '{}/{}'.format(POST_DIR, name)
-	post = flatpages.get_or_404(path)
-	return render_template('post.html', post=post)
+    return render_template('index.html', cards=cards, bigheader=True, **settings)
  
 
 @app.route('/portfolio/<name>/')
