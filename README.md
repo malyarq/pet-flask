@@ -5,4 +5,4 @@
 - Собирал статическую версию сайта
 - Деплоил сайт на GitHub Pages
 
-![1](https://user-images.githubusercontent.com/126451788/233166425-22320684-1b7f-4ae1-b5f5-782497d4d2e6.png)
+![1](https://user-images.githubusercontent.com/126451788/234600517-1c31e538-8c26-46a1-bd84-fb5f899139ef.png)
