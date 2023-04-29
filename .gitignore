@@ -1,8 +1,0 @@
-# Virtual environments
-env/
-env3*/
-venv/
-.venv/
-
-# IDEs and editors
-.vscode/
